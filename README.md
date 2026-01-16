@@ -1,42 +1,50 @@
-# Machine Learning Fundamentals In-Depth
+# Machine Learning Fundamentals 🚀
 
-Welcome to the comprehensive guide on Machine Learning. This repository has been structured into detailed modules covering the mathematical intuition, engineering practices, and algorithmic details of ML.
+Welcome to the **ML Fundamentals** deep-dive series. This repository is designed to take you from zero to mathematical intuition in Machine Learning, covering everything from basic problem framing to advanced Transformer architectures.
 
-## Table of Contents
+## 🗺️ Learning Roadmap
 
-### Phase 1: The Basics
-*   **[Chapter 1: Foundations of Machine Learning](01_Foundations.md)**
-    *   ML vs Deep Learning (Deep View)
-    *   Problem Framing & ROI
-    *   Mathematical Formulation of Learning
-*   **[Chapter 2: Data Engineering & Preprocessing](02_Data_Engineering.md)**
-    *   ETL Processes
-    *   Scaling: Z-Score (Standardization) vs MinMax
-    *   Handling Outliers & Missing Data
-    *   Categorical Encoding
+```mermaid
+graph TD
+    Start((START)) --> Fnd[01 Foundations]
+    Fnd --> DE[02 Data Engineering]
+    DE --> NLP[03 NLP Basics]
+    DE --> Reg[04 Regression]
+    DE --> Unsup[06 Unsupervised]
+    Reg --> Class[05 Classification]
+    NLP --> AdvNLP[07 Advanced NLP]
+    
+    style Start fill:#f9f,stroke:#333,stroke-width:2px
+    style Fnd fill:#bbf,stroke:#333,stroke-width:2px
+    style DE fill:#dfd,stroke:#333,stroke-width:2px
+```
 
-### Phase 2: Natural Language Processing
-*   **[Chapter 3: NLP Fundamentals](03_NLP_Fundamentals.md)**
-    *   Language Theory (Syntax/Semantics)
-    *   Preprocessing Pipelines (Tokenization, Lemmatization)
-    *   Vectorization Math: TF-IDF & Cosine Similarity
-*   **[Chapter 7: Advanced Text Modeling](07_Advanced_Text_Modeling.md)**
-    *   Topic Modeling (LDA)
-    *   Transformers (BERT, GPT), Attention Mechanisms
+---
 
-### Phase 3: Supervised Learning
+## 📚 Curriculum Overview
+
+### Phase 1: Foundations & Data
+*   **[Chapter 1: Foundations](01_Foundations.md)**
+    *   *Summary*: Understand how machines learn, ROI framing, and the difference between traditional ML and Deep Learning.
+*   **[Chapter 2: Data Engineering](02_Data_Engineering.md)**
+    *   *Summary*: Mastering the art of cleaning data, handling outliers, and scaling features for mathematical modeling.
+
+### Phase 2: Supervised Learning
 *   **[Chapter 4: Regression](04_Supervised_Learning_Regression.md)**
-    *   Linear Regression & Cost Functions (MSE vs MAE)
-    *   Gradient Descent: Mathematical Derivation & Numerical Example
-    *   OLS (Normal Equation)
+    *   *Summary*: Deep dive into Linear Regression, Gradient Descent math, and error metrics like MSE and MAE.
 *   **[Chapter 5: Classification](05_Supervised_Learning_Classification.md)**
-    *   Logistic Regression (Sigmoid)
-    *   Decision Trees (Entropy & Gini Math)
-    *   Support Vector Machines (Kernels & Margins)
-    *   Ensemble Methods: Random Forest vs Boosting
+    *   *Summary*: Logistic Regression, SVMs, Decision Trees, and how Ensemble methods (Boosting/Bagging) dominate tabular data.
 
-### Phase 4: Unsupervised Learning
+### Phase 3: Natural Language Processing (NLP)
+*   **[Chapter 3: NLP Fundamentals](03_NLP_Fundamentals.md)**
+    *   *Summary*: Turning text into math using TF-IDF, Tokenization, and Lemmatization.
+*   **[Chapter 7: Advanced Text Modeling](07_Advanced_Text_Modeling.md)**
+    *   *Summary*: Exploring the world of Transformers, Attention mechanisms, BERT, and Topic Modeling.
+
+### Phase 4: Finding Patterns
 *   **[Chapter 6: Unsupervised Learning](06_Unsupervised_Learning.md)**
-    *   Clustering: K-Means (Inertia) & DBSCAN
-    *   Dimensionality Reduction: PCA (Eigenvalues) & t-SNE
-    *   Association Rule Learning
+    *   *Summary*: Clustering (K-Means/DBSCAN) and Dimensionality Reduction (PCA/t-SNE) for discovery without labels.
+
+---
+> [!TIP]
+> Each chapter contains **Numerical Intuition Examples** where we step through the math manually to ensure you grasp the logic behind the code.
